@@ -1,0 +1,110 @@
+﻿body {
+    background-color: aquamarine;
+}
+
+h1 {
+    font-size: 4em;
+    color: #333;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    position: initial;
+    color: #333;
+    margin: 0;
+    background-color: #b6ff00;
+    max-width: auto;
+    text-align: right;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    float: right;
+    padding: 5px;
+}
+
+@media (min-width: 992px) {
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    }
+    #Box {
+        max-width: 32%;
+        overflow: auto;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5em;
+        float: left;
+        margin: 5px;
+        padding: 0px;
+        border: solid 1px black;
+        background-color: antiquewhite;
+    }
+    p {
+        padding: 10px;
+        margin: 5px;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+
+    #Box {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        font-size: 1.5em;
+        margin: 5px;
+        padding: 0px;
+        border: solid 1px black;
+        background-color: antiquewhite;
+    }
+
+        #Box:nth-child(3) {
+            grid-column: span 2;
+        }
+
+    h2 {
+        font-size: 2em;
+        color: #333;
+        margin: 0;
+        background-color: #b6ff00;
+        text-align: right;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 5px;
+    }
+
+    p {
+        padding: 10px;
+        margin: 5px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    }
+    #Box {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5em;
+        float: left;
+        margin: 5px;
+        padding: 0px;
+        border: solid 1px black;
+        background-color: antiquewhite;
+    }
+    p {
+        padding: 10px;
+        margin: 5px;
+        margin-top: 60px;
+    }
+}
